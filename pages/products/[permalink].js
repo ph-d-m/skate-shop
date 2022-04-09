@@ -43,11 +43,11 @@ export default function ProductPage({ product, categories, products }) {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 75}`
   }
 
-  function getRandomInt() {
-    return Math.floor(Math.random() * 3);
+  // function getRandomInt() {
+  //   return Math.floor(Math.random() * 3);
 
     
-  }
+  // }
 
   console.log([product]);
     
@@ -59,24 +59,11 @@ export default function ProductPage({ product, categories, products }) {
       <Image 
        alt={product.name}
        loader={imageLoader}
-       src={product.assets[2].url}
+       src={product.assets[0].url}
        width={500}
        height={500}
        />
-      <Image 
-       alt={product.name}
-       loader={imageLoader}
-       src={product.assets[getRandomInt(0)].url}
-       width={500}
-       height={500}
-       />
-       <Image 
-       alt={product.name}
-       loader={imageLoader}
-       src={product.assets[getRandomInt(1)].url}
-       width={500}
-       height={500}
-       />
+      
       <p>{product.price.formatted_with_symbol}</p>
       <CategoryList categories={categories}/>
       </div>
