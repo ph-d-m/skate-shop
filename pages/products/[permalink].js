@@ -37,14 +37,14 @@ export async function getStaticPaths() {
 
 
 
-export default function ProductPage({ product, categories }) {
+export default function ProductPage({ product, categories, products }) {
 
   const imageLoader = ({ src, width, quality }) => {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 75}`
   }
 
   function getRandomInt() {
-    return Math.floor(Math.random() * 2);
+    return Math.floor(Math.random() * 3);
 
     
   }
@@ -54,25 +54,29 @@ export default function ProductPage({ product, categories }) {
   return (
   
     <div className="container">
+       
       <h1>{product.name}</h1>
       <Image 
-      loader={imageLoader}
-      src={product.assets[2].url}
-      width={500}
-      height={500}
-      />
+       alt={product.name}
+       loader={imageLoader}
+       src={product.assets[2].url}
+       width={500}
+       height={500}
+       />
       <Image 
-      loader={imageLoader}
-      src={product.assets[getRandomInt(0)].url}
-      width={500}
-      height={500}
-      />
-      <Image 
-      loader={imageLoader}
-      src={product.assets[getRandomInt(1)].url}
-      width={500}
-      height={500}
-      />
+       alt={product.name}
+       loader={imageLoader}
+       src={product.assets[getRandomInt(0)].url}
+       width={500}
+       height={500}
+       />
+       <Image 
+       alt={product.name}
+       loader={imageLoader}
+       src={product.assets[getRandomInt(1)].url}
+       width={500}
+       height={500}
+       />
       <p>{product.price.formatted_with_symbol}</p>
       <CategoryList categories={categories}/>
       </div>
