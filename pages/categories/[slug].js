@@ -1,5 +1,6 @@
 import getCommerce from "../../utils/commerce";
 import ProductList from "../../components/ProductList";
+import CategoryList from "../../components/CategoryList";
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
@@ -12,10 +13,13 @@ export async function getStaticProps({ params }) {
     category_slug: [slug],
   });
 
+  const { data: categories } = await commerce.categories.list();
+
   return {
     props: {
       category,
       products,
+      categories,
     },
   };
 }
@@ -34,11 +38,11 @@ export async function getStaticPaths() {
     };
   }
 
-  export default function CategoryPage({ category, products }) {
+  export default function CategoryPage({ category, products, categories }) {
     return (
       <>
         <h1>{category.name}</h1>
-        
+        <CategoryList categories={categories}/>
         <ProductList products={products} />
       </>
     );
