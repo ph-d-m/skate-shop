@@ -14,14 +14,12 @@ export default function Navbar() {
                         <line y1="11.5" x2="32" y2="11.5" stroke="#F87C3D" strokeWidth="3" />
                     </svg>
                 </button>
-                <Link href="/">
                 <Image
                     src="/img/logo.svg"
                     width={150}
                     height={50}
                     className="navLogo "
                 />
-                </Link>
                 <div className="hidden w-full md:block md:w-auto" id="mobile-menu">
                     <ul className="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                         <li>
