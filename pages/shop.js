@@ -1,4 +1,3 @@
-import styles from '../styles/Home.module.css';
 import Product from '../components/Product';
 import ProductList from '../components/ProductList';
 import getCommerce from "../utils/commerce";
