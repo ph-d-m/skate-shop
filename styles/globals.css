@@ -8,7 +8,9 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Acumin Pro';
+  font-display: optional;
 }
+
 
 a {
   color: inherit;
@@ -20,7 +22,7 @@ button {
   font-size: 1.5rem;
   font-family: 'Acumin Pro SemiCondensed Black';
   text-transform: uppercase;
-  border: 3px solid;
+  border: 4px solid;
 }
 
 
@@ -30,4 +32,12 @@ button {
 
 .navLogo {
   cursor: pointer;
+}
+
+h1 {
+font-family: 'Acumin Pro Condensed Black'
+}
+
+h2 {
+  font-family: 'Acumin Pro Wide Medium';
 }
