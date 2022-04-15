@@ -1,7 +1,7 @@
-export default function Product({ name, price }) {
+export default function Product({ price }) {
     return (
       <p>
-        {name}: {price.formatted_with_symbol}
+        {price.formatted_with_symbol}
       </p>
     );
   }

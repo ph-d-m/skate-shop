@@ -1,6 +1,7 @@
 import getCommerce from "../../utils/commerce";
 import ProductList from "../../components/ProductList";
 import CategoryList from "../../components/CategoryList";
+import Image from 'next/image'
 
 export async function getStaticProps({ params }) {
   const { slug } = params;
@@ -38,10 +39,10 @@ export async function getStaticPaths() {
     };
   }
 
-  export default function CategoryPage({ category, products, categories }) {
+  export default function CategoryPage({ products, categories }) {
+
     return (
       <>
-        <h1>{category.name}</h1>
         <CategoryList categories={categories}/>
         <ProductList products={products} />
       </>

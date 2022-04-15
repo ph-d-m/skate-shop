@@ -8,7 +8,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Acumin Pro';
-  font-display: optional;
+  font-display: swap;
 }
 
 
@@ -40,4 +40,8 @@ font-family: 'Acumin Pro Condensed Black'
 
 h2 {
   font-family: 'Acumin Pro Wide Medium';
+}
+
+.categories {
+  font-family: 'Acumin Pro Wide Regular'
 }

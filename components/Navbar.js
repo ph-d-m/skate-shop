@@ -15,14 +15,14 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li>
-                        <Link href="/shop">
+                        <Link href="/lookbook">
                             <a>
                                 Lookbook
                             </a>
                         </Link>
                     </li>
                     <li >
-                        <Link href="/shop">
+                        <Link href="/infos">
                             <a>
                                 Infos
                             </a>

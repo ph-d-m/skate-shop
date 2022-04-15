@@ -2,6 +2,7 @@ import Product from '../components/Product';
 import ProductList from '../components/ProductList';
 import getCommerce from "../utils/commerce";
 import CategoryList from "../components/CategoryList"
+import Category from '../components/Category';
 
 export async function getStaticProps() {
     const commerce = getCommerce();
@@ -21,9 +22,7 @@ console.log([categories]);
 
     return (
       <>
-        <h1>Shop All</h1>
-        <CategoryList categories={categories}>
-        </CategoryList>
+        <CategoryList categories={categories}/>
         <ProductList products={products} />
       </>
     );

@@ -36,37 +36,63 @@ export async function getStaticPaths() {
 }
 
 
-
 export default function ProductPage({ product, categories, products }) {
 
   const imageLoader = ({ src, width, quality }) => {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 75}`
   }
 
-  // function getRandomInt() {
-  //   return Math.floor(Math.random() * 3);
-
-    
-  // }
 
   console.log([product]);
     
   return (
-  
-    <div className="container">
-       
-      <h1>{product.name}</h1>
-      <Image 
-       alt={product.name}
-       loader={imageLoader}
-       src={product.assets[0].url}
-       width={500}
-       height={500}
-       />
-      
-      <p>{product.price.formatted_with_symbol}</p>
-      <CategoryList categories={categories}/>
+  <>
+      <div className=" max-w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-2">
+          <div className="w-full h-full aspect-w-1 aspect-h-1 lg:aspect-none">
+            <Image
+              alt={product.name}
+              loader={imageLoader}
+              src={product.assets[0].url}
+              width={500}
+              height={500}
+              className="object-cover"
+            />
+          </div>
+          <div className=" ">
+            <div className="">
+            <h1>{product.name}</h1>
+            
+            <p>{product.price.formatted_with_symbol}</p>
+            </div>
+          </div>
+        </div>
       </div>
-    
+
+      <div className=" max-w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-3">
+        <div className="w-full h-full aspect-w-1 aspect-h-1 lg:aspect-none">
+            <Image
+              alt={product.name}
+              loader={imageLoader}
+              src={product.assets[0].url}
+              width={500}
+              height={500}
+              className="object-cover"
+            />
+          </div>
+          <div className="w-full h-full aspect-w-1 aspect-h-1 lg:aspect-none">
+            
+          </div>
+          <div className="w-full h-full aspect-w-1 aspect-h-1 lg:aspect-none">
+            
+          </div>
+        </div>
+      </div>
+      <section className=" max-w-full text-center">
+      <h1 className=" text-4xl uppercase pl-8">Looking for something else ?</h1>
+      <CategoryList categories={categories} />
+      </section>
+    </>
   );
 }
