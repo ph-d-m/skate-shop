@@ -25,6 +25,13 @@ button {
   border: 4px solid;
 }
 
+@media (max-width: 1024px) {
+button {
+font-size: 1rem;
+
+}
+}
+
 
 * {
   box-sizing: border-box;
@@ -35,7 +42,7 @@ button {
 }
 
 h1 {
-font-family: 'Acumin Pro Condensed Black'
+font-family: 'Acumin Pro Condensed Black';
 }
 
 h2 {
@@ -43,5 +50,22 @@ h2 {
 }
 
 .categories {
-  font-family: 'Acumin Pro Wide Regular'
+  font-family: 'Acumin Pro Wide Regular';
+}
+
+.member1 {
+background-image: url('/img/Member1.jpg');
+}
+
+.member2 {
+background-image: url('/img/Member2.jpg');
+}
+
+.member3 {
+background-image: url('/img/Member3.jpg');
+
+}
+
+.member4{
+background-image: url('/img/Member4.jpg');
 }

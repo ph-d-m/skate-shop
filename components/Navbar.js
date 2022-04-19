@@ -31,6 +31,7 @@ export default function Navbar() {
                 </ul>
             </div>
             <div className='container flex justify-center'>
+                
                 <Image
                     src="/img/logo.svg"
                     width={150}
@@ -38,6 +39,7 @@ export default function Navbar() {
                     className="navLogo"
                     alt='JAAJ'
                 />
+                
             </div>
             <div className='container flex justify-end'>
                 <Image

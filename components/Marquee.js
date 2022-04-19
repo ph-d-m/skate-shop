@@ -1,8 +1,8 @@
 export default function Marquee() {
 
     return (
-    <div className="relative flex overflow-x-hidden w-full uppercase text-orange text-6xl font-bold italic">
-          <div className="py-8 animate-marquee whitespace-nowrap">
+    <div className="relative text-4xl lg:text-6xl flex overflow-x-hidden w-full uppercase text-orange font-bold italic">
+          <div className="md:py-12 py-6 animate-marquee whitespace-nowrap">
             <span className=" mx-4">jaaj, for everything!</span>
             <span className=" mx-4">jaaj, for everything!</span>
             <span className=" mx-4">jaaj, for everything!</span>
@@ -10,7 +10,7 @@ export default function Marquee() {
             <span className=" mx-4">jaaj, for everything!</span>
           </div>
 
-          <div className="absolute top-0 py-8 animate-marquee2 whitespace-nowrap">
+          <div className="absolute top-0 md:py-12 py-6 animate-marquee2 whitespace-nowrap">
             <span className=" mx-4">jaaj, for everything!</span>
             <span className=" mx-4">jaaj, for everything!</span>
             <span className=" mx-4">jaaj, for everything!</span>

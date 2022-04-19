@@ -1,8 +1,7 @@
-import Product from '../components/Product';
 import ProductList from '../components/ProductList';
 import getCommerce from "../utils/commerce";
 import CategoryList from "../components/CategoryList"
-import Category from '../components/Category';
+import Image from 'next/image'
 
 export async function getStaticProps() {
     const commerce = getCommerce();
@@ -24,6 +23,17 @@ console.log([categories]);
       <>
         <CategoryList categories={categories}/>
         <ProductList products={products} />
+        <section className=' max-w-full  bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400'>
+          <Image
+          src="/img/PageShop.jpg"
+          width={1000}
+          height={350}
+          alt="Shop"
+          className=' object-cover aspect-auto mix-blend-multiply'
+          layout='responsive'
+          />
+
+        </section>
       </>
     );
   }

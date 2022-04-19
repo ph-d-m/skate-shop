@@ -5,7 +5,7 @@ export default function Lookbook() {
         <>
         <section className='max-w-full'>
             <div className="grid grid-cols-1 lg:grid-cols-2">
-                <div className="w-full h-full py-10 px-10 bg-gradient-to-br from-indigo-800 via-pink-500 to-orange">
+                <div className="w-full h-full py-10 px-10 bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400">
                     <p>Here is a Selection of photos & videos of our daily routine and our recent collection.</p>
                     <p>You can also watch our videos on youtube.</p>
                 </div>

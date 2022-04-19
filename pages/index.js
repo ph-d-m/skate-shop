@@ -13,31 +13,33 @@ export default function Home() {
       </Header>
 
       <section>
-        <div className="container flex flex-col lg:flex-row max-w-full">
+        <div className="container flex flex-col lg:flex-row max-w-full aspect-auto">
           <Image
             src="/img/Home.jpg"
             width={750}
             height={600}
-            className="aspect-auto object-cover"
+            className=" object-cover"
             alt="Home"
           />
 
-          <div className="text-black uppercase lg:w-1/2 px-10 w-full my-auto py-5">
-            <h1 className="text-6xl ">It’s Jaaaaaaaaj !</h1>
-            <h2 className="text-4xl ">We are a belgian newcomer’s skate brand and we only have one rule: have fun.</h2>
+          <div className="text-center md:text-left text-black uppercase lg:w-1/2 px-10 w-full my-auto py-5">
+            <h1 className="mb-2 lg:mb-6 text-3xl lg:text-4xl xl:text-6xl">It’s Jaaaaaaaaj !</h1>
+            <h2 className="text-lg lg:text-2xl xl:text-4xl">We are a belgian newcomer’s skate brand and we only have one rule: have fun.</h2>
             <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto px-8 pt-2 pb-1 text-center hover:transition-all"><a>Learn more</a></button>
           </div>
         </div>
       </section>
 
-      <section className="max-w-full flex flex-wrap justify-around align-baseline p-12 h-auto bg-gradient-to-br from-indigo-800 via-pink-500 to-orange">
+      <section className="max-w-full h-auto text-center bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400">
+        <h1 className=" text-4xl lg:text-6xl uppercase pt-12">New collection !</h1>
+        <div className="flex flex-wrap justify-evenly align-end p-6">
         <div className="p-5">
           <Image
             src="/img/LinkShop.jpg"
-            width={150}
-            height={250}
+            width={100}
+            height={160}
             alt="Shop All"
-            className="object-cover rounded-full"
+            className=" object-cover rounded-full aspect-auto"
             layout="responsive"
           />
 
@@ -50,22 +52,27 @@ export default function Home() {
             width={200}
             height={400}
             alt="Shop Decks"
-            className="object-cover"
+            className="object-cover aspect-auto"
             layout="responsive"
           />
           <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto px-8 pt-2 pb-1 text-center hover:transition-all"><a>Decks</a></button>
 
         </div>
+        </div>
       </section>
 
       <section className="py-20">
-        <h2 className="text-center text-4xl uppercase p-5">Each member of jaaj is unique in their own way.
+        <h2 className="text-center text-2xl sm:text-4xl uppercase p-5">Each member of jaaj is unique in their own way.
           <br /> Maybe you can recognize one of them.  </h2>
         <div className="flex flex-wrap justify-center text-4xl uppercase">
-          <div className=" rounded-full w-52 h-80 m-5 bg-orange relative "><h3 className="absolute top-1/2 left-0 translate-x-10">Lionel</h3></div>
-          <div className=" rounded-full w-52 h-80 m-5 bg-orange relative "><h3 className="absolute top-1/2 left-0 translate-x-10">Lionel</h3></div>
-          <div className=" rounded-full w-52 h-80 m-5 bg-orange relative "><h3 className="absolute top-1/2 left-0 translate-x-10">Lionel</h3></div>
-          <div className=" rounded-full w-52 h-80 m-5 bg-orange relative "><h3 className="absolute top-1/2 left-0 translate-x-10">Lionel</h3></div>
+          <div className="member1 rounded-full w-52 h-80 m-5 ">
+          </div>
+          <div className="member2 rounded-full w-52 h-80 m-5 ">
+          </div>
+          <div className="member3 rounded-full w-52 h-80 m-5 ">
+          </div>
+          <div className="member4 rounded-full w-52 h-80 m-5 ">
+          </div>
         </div>
       </section>
 
