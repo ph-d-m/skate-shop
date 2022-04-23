@@ -36,7 +36,7 @@ export async function getStaticPaths() {
 }
 
 
-export default function ProductPage({ product, categories, products }) {
+export default function ProductPage({ product, categories }) {
 
   const imageLoader = ({ src, width, quality }) => {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 75}`
@@ -62,9 +62,14 @@ export default function ProductPage({ product, categories, products }) {
             </div>
           </div>
           <div className=" ">
+<h1>{product.name}</h1>
+
+{product.description}
+
+
             <div className="">
-              
-              <button className=""><a>Add to cart</a></button>
+              <button className="text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto px-8 pt-2 pb-1 text-center hover:transition-all"><a>Add to cart</a></button>
+              <span className="return">Back</span>
             </div>
           </div>
         </div>

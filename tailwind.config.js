@@ -30,7 +30,6 @@ module.exports = {
                             },
                      },
                      fontSize: {
-
                             '6xl': '4rem'
 
                      }

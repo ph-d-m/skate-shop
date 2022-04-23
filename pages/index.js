@@ -1,6 +1,7 @@
 import Marquee from "../components/Marquee";
 import Image from "next/image";
 import Header from "../components/Header";
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -42,9 +43,9 @@ export default function Home() {
             className=" object-cover rounded-full aspect-auto"
             layout="responsive"
           />
-
-          <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto px-8 pt-2 pb-1 text-center hover:transition-all"><a>Shop All</a></button>
-
+            <Link href="/categories/all">
+              <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto px-8 pt-2 pb-1 text-center hover:transition-all"><a>Shop All</a></button>
+            </Link>
         </div>
         <div className="p-5">
           <Image
@@ -55,8 +56,9 @@ export default function Home() {
             className="object-cover aspect-auto"
             layout="responsive"
           />
-          <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto px-8 pt-2 pb-1 text-center hover:transition-all"><a>Decks</a></button>
-
+            <Link href="/categories/decks">
+              <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto px-8 pt-2 pb-1 text-center hover:transition-all"><a>Decks</a></button>
+            </Link>
         </div>
         </div>
       </section>
