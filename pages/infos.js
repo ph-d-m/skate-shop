@@ -7,25 +7,24 @@ import Marquee from '../components/Marquee'
 export default function Infos() {
     return (
         <>
-        <Header>
-            <div className='max-w-full h-full pb-10 px-5'>
-            <Image
-            src='/img/logo.svg'
-            width={1200}
-            height={400}
-            alt="Logo"
-            className='object-cover aspect-auto '
-            />
-            </div>
-            <Marquee/>
-        </Header>
+            <Header>
+                <div className='max-w-full h-full pb-10 px-5'>
+                    <Image
+                        src='/img/logo.svg'
+                        width={1200}
+                        height={400}
+                        alt="Logo"
+                        className='object-fill aspect-auto '
+                    />
+                </div>
+                <Marquee />
+            </Header>
             <section className="max-w-full h-auto p-12 bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400">
                 <div className='text-center py-8'>
                     <h1 className=' xl:text-6xl text-4xl uppercase'>About us</h1>
                     <p className='xl:text-4xl text-2xl mt-8 uppercase'>We are a belgian newcomer’s skate brand and we only have one rule: have fun.
                         We are here to make a brand who can make everyone good about themself.</p>
                 </div>
-
             </section>
 
             <section className='max-w-full'>
@@ -41,13 +40,13 @@ export default function Infos() {
                     </div>
                     <div className="max-w-full h-full">
                         <Image
-                        src="/img/Infos.jpg"
-                        layout='responsive'
-                        width={800}
-                        height={1000}
-                        alt="Why Jaaj"
-                        className='object-cover'
-                        priority
+                            src="/img/Infos.jpg"
+                            layout='responsive'
+                            width={800}
+                            height={1000}
+                            alt="Why Jaaj"
+                            className='object-cover'
+                            priority
                         />
                     </div>
                 </div>

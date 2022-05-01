@@ -12,7 +12,7 @@ export default function ProductList({ products }) {
   return (
     <div>
       <div className=" max-w-full pb-16 ">
-        <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {products.map((product) => (
             <div key={product.permalink} className="group relative odd:bg-orange even:bg-purple">
 
@@ -33,7 +33,7 @@ export default function ProductList({ products }) {
                     alt={product.name}
                     width={300}
                     height={300}
-                    className="object-contain"
+                    className="object-contain hover:scale-125 "
                   />
                   <a>
                     <Product {...product} />

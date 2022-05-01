@@ -7,11 +7,11 @@ export default function CategoryList({ categories }) {
 
 
   return (
-    <ul className="flex  flex-row-reverse flex-wrap-reverse justify-evenly p-8">
+    <ul className="flex  flex-row-reverse flex-wrap-reverse justify-around p-4 md:p-8">
       {categories.map((category) => (
-        <li key={category.slug} {...category.children} className="mr-10">
+        <li key={category.slug} {...category.children} className="mr-4 md:mr-10">
           <Link href={`/categories/${category.slug}`}>
-            <a className="categories text-base">
+            <a className="categories text-xl text-black">
               <Category {...category} />
             </a>
           </Link>

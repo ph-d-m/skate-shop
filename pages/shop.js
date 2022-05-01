@@ -23,14 +23,15 @@ console.log([categories]);
       <>
         <CategoryList categories={categories}/>
         <ProductList products={products} />
-        <section className=' max-w-full  bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400'>
+        <section className=' bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400 '>
           <Image
           src="/img/PageShop.jpg"
           width={1000}
-          height={350}
+          height={400}
           alt="Shop"
-          className=' object-cover aspect-auto mix-blend-multiply'
+          className='object-cover aspect-auto mix-blend-soft-light	'
           layout='responsive'
+          quality={100}
           />
 
         </section>

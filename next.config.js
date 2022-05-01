@@ -6,6 +6,9 @@ const nextConfig = {
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
+  images: {
+    domains: ["images.pexels.com"],
+  },
 }
 
 module.exports = nextConfig
