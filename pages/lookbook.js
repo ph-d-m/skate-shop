@@ -2,7 +2,7 @@ import Image from 'next/image'
 import { useState, useEffect } from "react";
 import { getQueryPhotos } from '../utils/pexels';
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
     const data = await getQueryPhotos();
     return {
       props: {
