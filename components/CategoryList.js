@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Image from 'next/image'
 import Category from "./Category";
 
 export default function CategoryList({ categories }) {
