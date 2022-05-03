@@ -2,6 +2,7 @@ import Image from 'next/image'
 import { useState, useEffect } from "react";
 import { getQueryPhotos } from '../utils/pexels';
 
+
 export async function getServerSideProps(context) {
     const data = await getQueryPhotos(context);
     return {
@@ -36,9 +37,10 @@ export default function Lookbook({data}) {
                                 <div key={pic.id}>
                                 <Image
                                     src={pic.src.portrait}
-                                    height={600}
+                                    height={450}
                                     width={400}
                                     alt={pic.url}
+                                    className="object-cover aspect-auto"
                                 />
                                 </div>
                             ))

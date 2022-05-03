@@ -101,3 +101,9 @@ background-image: url('/img/Member3.jpg');
 background-image: url('/img/Member4.jpg');
 }
 
+.return, .delivery {
+  display: inline-flex;
+  column-gap: 5%;
+  justify-content: flex-start;
+  padding: 5px;
+}

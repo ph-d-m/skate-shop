@@ -43,7 +43,7 @@ export default function Home() {
             className=" object-cover rounded-full aspect-auto"
             layout="responsive"
           />
-            <Link href="/categories/all">
+            <Link href="/categories/all" passHref>
               <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto hover:transition-all"><a>Shop All</a></button>
             </Link>
         </div>
@@ -56,7 +56,7 @@ export default function Home() {
             className="object-cover aspect-auto"
             layout="responsive"
           />
-            <Link href="/categories/decks">
+            <Link href="/categories/decks" passHref>
               <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto hover:transition-all"><a>Decks</a></button>
             </Link>
         </div>

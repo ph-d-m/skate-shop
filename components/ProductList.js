@@ -25,7 +25,7 @@ export default function ProductList({ products }) {
                 />
               </button>
 
-              <Link href={`/products/${product.permalink}`}>
+              <Link href={`/products/${product.permalink}`} passHref>
                 <div className="w-full h-auto aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none text-center p-5 cursor-pointer">
                   <Image
                     loader={imageLoader}

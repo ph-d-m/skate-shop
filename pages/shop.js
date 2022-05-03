@@ -23,7 +23,7 @@ console.log([categories]);
       <>
         <CategoryList categories={categories}/>
         <ProductList products={products} />
-        <section className=' bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400 '>
+        <section className=' '>
           <Image
           src="/img/PageShop.jpg"
           width={1000}
