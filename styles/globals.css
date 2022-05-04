@@ -107,3 +107,40 @@ background-image: url('/img/Member4.jpg');
   justify-content: flex-start;
   padding: 5px;
 }
+
+/* MENU DROPDOWN */
+.menu {
+  visibility: hidden;
+  transform: translateY(-20px);
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  left: -5%;
+  width: 300px;
+  background: #1F1F1F;
+}
+
+.menu.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menu li a {
+  text-decoration: none;
+  padding: 15px 20px;
+  display: block;
+}
+
+.menu-trigger {
+  background-color: #1F1F1F;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  vertical-align: middle;
+}
+
+.menu-trigger:hover {
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}

@@ -13,7 +13,7 @@ module.exports = {
 
                      },
                      spacing: {
-                            '40': '38rem',
+                            '40': '35rem',
                      },
                      animation: {
                             marquee: 'marquee 15s linear infinite',

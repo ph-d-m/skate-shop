@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import Dropdown from './Dropdown'
 
 
 export default function Navbar() {
@@ -31,10 +32,9 @@ export default function Navbar() {
                     </li>
                 </ul>
             </div>
-            <div className='container lg:hidden block'>
-                <button className='p-0 border-0 border-none'><Image src="/img/ToggleMenu.svg" width={32} height={32}/></button>
-            </div>
 
+            <Dropdown/>
+            
             <div className='container flex justify-center'>
                 <Link href="/">
                     <a>
