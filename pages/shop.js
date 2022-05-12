@@ -17,7 +17,6 @@ export async function getStaticProps() {
   
   export default function Shop({ products, categories }) {
       
-console.log([categories]);
 
     return (
       <>

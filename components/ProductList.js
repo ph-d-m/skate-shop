@@ -16,15 +16,6 @@ export default function ProductList({ products }) {
           {products.map((product) => (
             <div key={product.permalink} className="group relative odd:bg-orange even:bg-purple">
 
-              <button className="border-none z-10 absolute top-0 right-0 p-2">
-                <Image
-                src="/img/plus.png"
-                width={32}
-                height={32}
-                alt="Add ?"
-                />
-              </button>
-
               <Link href={`/products/${product.permalink}`} passHref>
                 <div className="w-full h-auto aspect-w-1 aspect-h-1 group-hover:opacity-75 lg:aspect-none text-center p-5 cursor-pointer">
                   <Image
@@ -33,7 +24,7 @@ export default function ProductList({ products }) {
                     alt={product.name}
                     width={300}
                     height={300}
-                    className="object-contain hover:scale-125 "
+                    className=" object-scale-down hover:scale-125 "
                   />
                   <a>
                     <Product {...product} />

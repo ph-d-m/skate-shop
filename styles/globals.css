@@ -144,3 +144,28 @@ background-image: url('/img/Member4.jpg');
 .menu-trigger:hover {
   box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
+
+.size {
+  display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    column-gap: 15px;
+}
+
+.size button {
+  width: 55px;
+    height: 55px;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    border-radius: 50px 50px;
+    color: #F87C3D;
+    background-color: #1F1F1F;
+    border: 3.5px solid #F87C3D;
+    text-align: center;
+    padding: 0;
+}
+
+.size button:hover {
+  color: #1F1F1F;
+  background-color: #F87C3D;
+}

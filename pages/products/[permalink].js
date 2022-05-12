@@ -40,8 +40,6 @@ export default function ProductPage({ product, categories, price }) {
   const imageLoader = ({ src, width, quality }) => {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 80}`
   }
-
-  console.log([product]);
     
   return (
   <>
@@ -59,7 +57,7 @@ export default function ProductPage({ product, categories, price }) {
               />
             </div>
           </div>
-          <div className="w-full h-auto  p-4 text-left aspect-w-1 aspect flex justify-center flex-col max-w-xl m-auto gap-y-4">
+          <div className="w-full h-auto px-4 py-6 text-left aspect-w-1 aspect flex justify-center flex-col max-w-xl m-auto gap-y-4">
             <h1 className=" my-4 text-3xl lg:text-4xl text-center lg:text-left uppercase">{product.name}</h1>
             <div className=" text-lg"
               dangerouslySetInnerHTML={{ __html: product.description }}
@@ -84,7 +82,6 @@ export default function ProductPage({ product, categories, price }) {
             </div>
             <div className="mx-auto lg:-ml-0">
               <button className=" text-lg text-orange bg-black hover:bg-orange hover:text-black rounded-full w-auto lg:w-full sm:w-auto text-center hover:transition-all"><a>Add to cart</a></button>
-              
             </div>
           </div>
         </div>
@@ -96,17 +93,31 @@ export default function ProductPage({ product, categories, price }) {
             <Image
               alt={product.name}
               loader={imageLoader}
-              src={product.assets[0].url}
-              width={500}
-              height={500}
-              className="object-fill aspect-auto"
+              src={product.assets[1].url}
+              width={530}
+              height={550}
+              className="object-cover aspect-auto"
             />
           </div>
           <div className="w-full h-full aspect-w-1 aspect-h-1 lg:aspect-none">
-            
+          <Image
+              alt={product.name}
+              loader={imageLoader}
+              src={product.assets[2].url}
+              width={530}
+              height={550}
+              className=" object-fill aspect-auto"
+            />
           </div>
           <div className="w-full h-full aspect-w-1 aspect-h-1 lg:aspect-none">
-            
+          <Image
+              alt={product.name}
+              loader={imageLoader}
+              src={product.assets[3].url}
+              width={530}
+              height={550}
+              className=" object-fill aspect-auto"
+            />
           </div>
         </div>
       </div>

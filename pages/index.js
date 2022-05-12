@@ -4,12 +4,13 @@ import Header from "../components/Header";
 import Link from "next/link"
 
 
+
 export default function Home() {
   return (
     <>
       <Header>
         <video className=" video w-72 md:w-40 h-72 md:h-40 max-w-full top-0 left-0 object-cover z-10 rounded-full aspect-auto shadow-inner " muted loop autoPlay>
-          <source src="/video/test.mp4" type="video/mp4" />
+          <source src="jaaj.mp4" type="video/mp4" />
         </video>
         <button className="pause-play border-0 p-7 place-self-center md:place-self-end"><Image src="/img/Pause.svg" width={28} height={28}/></button>
         <Marquee />
