@@ -34,7 +34,7 @@ export default function Lookbook({data}) {
             <h1 className='text-2xl lg:text-4xl uppercase m-4'>Videos</h1>
             <div className='aspect-video w-full md:w-2/3 h-auto m-auto'>
         <video className="video scl-50a" muted={true} loop={true} autoPlay={true} controls={true}>
-          <source src="large-jaaj.mp4" type="video/mp4" />
+          <source src="video-jaaj.mp4" type="video/mp4" />
         </video>
         </div>
         </section>
