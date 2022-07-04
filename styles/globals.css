@@ -39,9 +39,13 @@ background: #F87C3D;
 a {
   color: inherit;
   text-decoration: none;
-  font-family: "acumin-pro-wide",sans-serif;
-  font-weight: 700;
+  /* font-family: "acumin-pro-wide",sans-serif;
+  font-weight: 700; */
+  font-family: ruddy,sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
+
 
 button {
   width: auto;
