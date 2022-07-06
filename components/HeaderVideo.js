@@ -7,7 +7,6 @@ export default function HeaderVideo({children}) {
             <video className={styles.video} muted loop autoPlay>
                <source src="jaajskateboard-small.mp4" type="video/mp4" />
                <source src="jaajskateboard-small.webm" type="video/webm" />
-               Sorry, your browser doesn't support embedded videos.
              </video>
         </section>
     )
