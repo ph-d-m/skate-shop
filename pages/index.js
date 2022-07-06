@@ -1,7 +1,6 @@
-import Marquee from "../components/Marquee";
 import Image from "next/image";
-import Header from "../components/Header";
 import Link from "next/link"
+import HeaderVideo from "../components/HeaderVideo";
 
 
 
@@ -9,15 +8,8 @@ import Link from "next/link"
 export default function Home() {
   return (
     <>
-      <Header>
-        <video className=" video w-72 md:w-40 h-72 md:h-40 max-w-full top-0 left-0 object-cover z-10 rounded-full aspect-auto shadow-inner " muted loop autoPlay>
-          <source src="jaajskateboard-small.mp4" type="video/mp4" />
-        </video>
-        <button className="pause-play border-0 p-7 place-self-center md:place-self-end">
-          <Image src="/img/Pause.svg" width={28} height={28}/>
-          </button>
-        <Marquee />
-      </Header>
+      <HeaderVideo />
+
 
       <section>
         <div className="container flex flex-col lg:flex-row max-w-full aspect-auto">
@@ -36,7 +28,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-
+{/*
       <section className="max-w-full h-auto text-center bg-gradient-to-br from-indigo-600 via-pink-400  to-amber-400">
         <h1 className=" text-4xl lg:text-6xl uppercase pt-12">New collection !</h1>
         <div className="flex flex-wrap justify-evenly items-end p-6">
@@ -50,7 +42,7 @@ export default function Home() {
             layout="responsive"
           />
             <Link href="/categories/all" passHref>
-              <button className="mt-4 text-orange bg-black hover:bg-orange hover:text-black rounded-full  w-full sm:w-auto hover:transition-all"><a>Shop All</a></button>
+              <button><a>Shop All</a></button>
             </Link>
         </div>
         <div className="p-5">
@@ -82,7 +74,7 @@ export default function Home() {
           <div className="member4 rounded-full w-52 h-80 m-1 md:m-5 scale-75 lg:scale-100">
           </div>
         </div>
-      </section>
+      </section> */}
 
     </>
   )

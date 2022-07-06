@@ -1,7 +1,10 @@
+/*TAILWIND IMPORTS*/
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import './acumin.css';
+
+/*FONTS*/
+@import './fonts.css';
 
 * {
   transition-property: all;
@@ -10,14 +13,15 @@
   box-sizing: border-box;
 }
 
+/*GENERAL*/
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "acumin-pro",sans-serif;;
-  font-display: swap;
 }
 
+/*SCROLLBAR*/
 body::-webkit-scrollbar{
   width: 0.5rem;
   background: #222222;
@@ -25,27 +29,32 @@ body::-webkit-scrollbar{
 
 body::-webkit-scrollbar-thumb{
 background: #F87C3D;
-
 }
 
-
-@media (min-width: 1920px) {
-  body{
-    max-width: 50%;
-    margin: auto;
-  }
+img {
+  image-rendering: -webkit-optimize-contrast;
 }
 
 a {
   color: inherit;
   text-decoration: none;
-  /* font-family: "acumin-pro-wide",sans-serif;
-  font-weight: 700; */
-  font-family: ruddy,sans-serif;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "acumin-pro-wide",sans-serif;
+  font-weight: 700; 
 }
 
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
 
 button {
   width: auto;
@@ -58,13 +67,27 @@ button {
   text-align: center;
 }
 
+
+@media (min-width: 1920px) {
+  body{
+    max-width: 50%;
+    margin: auto;
+  }
+}
+
+
 .navLogo, .cart {
   cursor: pointer;
 }
 
 h1 {
-font-family: "acumin-pro-condensed", sans-serif;
-font-weight: 700;
+/* font-family: "acumin-pro-condensed", sans-serif;
+font-weight: 700; */
+font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+  font-family: "Impact",sans-serif;
+  font-weight: 700;
+  font-style: normal;
 }
 
 h2 {

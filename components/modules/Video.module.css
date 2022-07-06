@@ -1,0 +1,26 @@
+
+.containerVideo {
+    display: grid;
+    place-items: center;
+    background-color: #1F1F1F;
+}
+
+.video {
+    display: block;
+    max-width: 100%;
+    width: 35rem;
+    height: auto;
+    object-fit: cover;
+    border-radius: 9999px;
+    aspect-ratio: auto;
+}
+
+.buttonVideo {
+    cursor: pointer;
+    height: 28px;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate();
+    margin-right: auto;
+}

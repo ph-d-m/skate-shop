@@ -10,7 +10,6 @@ module.exports = {
                             'white': '#f1f1f1',
                             'orange': '#F87C3D',
                             'purple': '#7C59AD'
-
                      },
                      spacing: {
                             '40': '35rem',
