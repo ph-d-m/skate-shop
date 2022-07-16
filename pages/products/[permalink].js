@@ -36,7 +36,7 @@ export async function getStaticPaths() {
 
 }
 
-export default function ProductPage({ product }) {
+export default function ProductPage({ product, name }) {
 
   const imageLoader = ({ src, width, quality }) => {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 90}`
@@ -89,6 +89,7 @@ export default function ProductPage({ product }) {
               className={styles.fitAssetImage}
               width={600}
               height={600}
+              priority
             />
           </div>
 
@@ -111,7 +112,6 @@ export default function ProductPage({ product }) {
                 width={530}
                 height={550}
                 className={styles.fitAssetImage}
-                priority
               />
             </div>
           </div>
