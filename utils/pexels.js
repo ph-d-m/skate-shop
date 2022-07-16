@@ -42,3 +42,4 @@ export const getCollectionPhotos = async () => {
     const responseJson = await res.json();
     return responseJson.photos;
 }
+

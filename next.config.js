@@ -1,15 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
   images: {
-    domains: ["cdn.chec.io"],
+    domains: [
+      "cdn.chec.io",
+      "images.pexels.com"
+    ],
     dangerouslyAllowSVG: true,
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
-  },
-  images: {
-    domains: ["images.pexels.com"],
-  }
-
+  }, 
 }
 
 

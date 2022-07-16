@@ -1,0 +1,28 @@
+.error {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/gif/error.gif') center center / cover no-repeat;
+
+}
+
+.errorTitle {
+    font-family: 'gill-sans-nova';
+    font-style: italic;
+    font-weight: 900;
+    font-size: 96px;
+    line-height: 120px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #F87C3D;
+}
+
+
+.return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    row-gap: 30px;
+
+}

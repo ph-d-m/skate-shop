@@ -1,0 +1,90 @@
+.itemContainer {
+    width: 100%;
+    height: 100%;
+    z-index: 6;
+}
+
+.itemGrid {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+
+}
+@media (min-width: 640px) {
+    .itemGrid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 768px) {
+    .itemGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .itemGrid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280px) {
+    .itemGrid {
+        grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+}
+
+
+.itemBackground {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemBackground:nth-child(odd){
+    background: radial-gradient(50% 45% at 50% 50%, #F7702C 0%, #FFFFFF 80%);
+}
+
+.itemBackground:nth-child(even){
+    background: radial-gradient(50% 45% at 50% 50%, #5C3BE2 0%, #FFFFFF 80%);
+}
+
+
+.itemImage {
+    opacity: 1;
+    display: grid;
+    justify-content: space-between;
+    justify-items: center;
+    padding: 1rem;
+    cursor: pointer;
+}
+
+.itemScaleHover {
+    object-fit: scale-down;
+}
+
+.itemScaleHover:hover {
+    --tw-scale-x: 1.25;
+    --tw-scale-y: 1.25;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.itemViewPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.itemPrice, .itemView {
+    font-family: "gill-sans-nova",sans-serif;;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #1F1F1F;
+    opacity: 0.75;
+    text-transform: uppercase;
+}

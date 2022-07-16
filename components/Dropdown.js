@@ -5,7 +5,6 @@ import Link from 'next/link'
 
 
 export default function Dropdown() {
-
     // we using useState to controll the component
     // useRef is to be able to reference the menu itself
     const dropdownRef = useRef(null);
@@ -34,14 +33,14 @@ export default function Dropdown() {
     // set up our dropdown mennu
     return (
         <div className='container lg:hidden block relative'>
-                <button onClick={onClick} className='p-0 border-0 border-none'>
+                <a onClick={onClick} className='p-0 border-0 border-none'>
                     <Image src="/img/ToggleMenu.svg" width={32} height={32}/>
-                </button>
+                </a>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                     <ul className="menu-trigger">
-                    <Link href="/shop"><a>Shop All</a></Link>
-                    <Link href="/lookbook"><a>Lookbook</a></Link>
-                    <Link href="/infos"><a>Infos</a></Link>
+                    <li><Link href="/shop"><a>Shop All</a></Link></li>
+                    <li><Link href="/lookbook"><a>Lookbook</a></Link></li>
+                    <li><Link href="/infos"><a>Infos</a></Link></li>
                     </ul>
                 </nav>
         </div>

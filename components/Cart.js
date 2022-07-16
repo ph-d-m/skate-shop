@@ -1,4 +1,3 @@
-import Commerce from "@chec/commerce.js";
 import { createContext, useReducer, useContext, useEffect } from "react";
 import getCommerce from "../utils/commerce";
 
@@ -56,4 +55,4 @@ export const CartProvider = ({children}) => {
 
 
 export const useCartState = () => useContext(CartStateContent)
-export const useCartDispatch = () => useContext(CartDispatchContent)
+export const useCartDispatch = () => useContext(CartDispatchContext)

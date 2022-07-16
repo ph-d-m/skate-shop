@@ -1,0 +1,53 @@
+
+.marquee {
+    position: relative;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    font-size: 48px;
+    line-height: 56px;
+    color: #F87C3D;
+    margin: 15px 0;
+}
+
+
+.marqueeAnimation {
+    animation: marquee 10s linear infinite;
+    white-space: nowrap;
+}
+
+.marqueeAnimationTwo {
+    animation: marquee2 15s linear infinite;
+    white-space: nowrap;
+    position: absolute;
+    top: 0px;
+}
+
+.marqueeAnimation span, .marqueeAnimation2 span {
+    margin: 0 1rem;
+    font-family: 'acumin-pro-wide';
+    font-style: italic;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+    
+}
+
+@keyframes marquee2 {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}

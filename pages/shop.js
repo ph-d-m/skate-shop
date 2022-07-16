@@ -1,7 +1,6 @@
 import ProductList from '../components/ProductList';
 import getCommerce from "../utils/commerce";
 import CategoryList from "../components/CategoryList"
-import Image from 'next/image'
 
 export async function getStaticProps() {
     const commerce = getCommerce();
@@ -16,23 +15,22 @@ export async function getStaticProps() {
   }
   
   export default function Shop({ products, categories }) {
-      
-
     return (
       <>
-        <CategoryList categories={categories}/>
+         <div className="containerShop">
+           <div className="containerCategoryItems">
+           <CategoryList categories={categories}/>
+                <p className="numberOfItemsText">{products.length} items</p>
+            </div> 
+         </div>
         <ProductList products={products} />
-        <section className=' '>
-          <Image
-          src="/img/PageShop.jpg"
-          width={1000}
-          height={400}
-          alt="Shop"
-          className='object-cover aspect-auto mix-blend-soft-light	'
-          layout='responsive'
-          quality={100}
-          />
 
+        <section>
+          <div className="pageShopImage">
+            <div >
+              <p>The latest products just for you. Right here.</p>
+            </div>
+          </div>
         </section>
       </>
     );

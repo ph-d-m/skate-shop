@@ -1,0 +1,118 @@
+.sectionInfos {
+     background-color: #1F1F1F;
+}
+
+.sectionAbout {
+    background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+    --tw-gradient-from: #4f46e5;
+    --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(79 70 229 / 0));
+    --tw-gradient-to: transparent;
+
+}
+
+.sectionExplanation {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.sectionAbout, .sectionInfos {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+.aboutUs {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    row-gap: 30px;
+}
+
+.aboutUsTitle {
+    font-family: "gill-sans-nova",sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 72px;
+    text-transform: uppercase;
+}
+
+.aboutUsText {
+    font-family: 'Acumin Pro Wide';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.containerHistory {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px 40px;
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    order: 0;
+}
+
+.textHistory {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 15px;
+}
+
+.title {
+    font-family: 'gill-sans-nova';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 56px;
+    text-transform: uppercase;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.paragraph {
+    font-family: 'Acumin Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 36px;
+}
+
+.visualInfos {
+    background: url('/img/Infos.jpg') center center / cover no-repeat;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    order: 1;
+}
+
+@media (max-width: 1024px) {
+
+    .visualInfos {
+        order: 0;
+    }
+
+    .containerHistory {
+        order: 1;
+    }
+    .sectionExplanation {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}

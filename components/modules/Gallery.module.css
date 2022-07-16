@@ -1,0 +1,39 @@
+.sectionLook {
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding:  0 40px;
+    display: flex;
+    mix-blend-mode: inherit;
+}
+
+.sectionLook {
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/img/gif/lookbook.gif') center center / cover no-repeat;
+}
+
+.Look {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    color: #F1F1F1;
+}
+
+.titleLook {
+    font-family: 'gill-sans-nova', Impact, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 44px;
+}
+
+.textLook {
+    font-family: 'acumin-pro-wide';
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+

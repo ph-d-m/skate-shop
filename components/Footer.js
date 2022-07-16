@@ -1,48 +1,60 @@
 import Image from "next/image"
+import styles from "./modules/Footer.module.css"
 
 
 export default function Footer() {
   return (
-
-    <footer className="px-8 py-12 bg-black text-orange text-xl uppercase">
-      <div className="sm:flex sm:items-start sm:justify-between">
-        <div className="mb-6 md:mb-0">
-          <Image
+    <footer className={styles.footer}>
+      <div className={styles.footerContainer}>
+        <div className={styles.footerContainerTop}>
+          <div className={styles.footerLogoSocials}>
+            <Image 
             src="/img/logo.svg"
-            width={200}
-            height={70}
-            className="navLogo "
-            alt="Jaaj Logo"
-          />
+            width={150}
+            height={80}
+            alt="Logo"
+            />
+              <ul className={styles.footerSocials}>
+                <li>Instagram</li>
+                <li>Facebook</li>
+                <li>Youtube</li>
+                <li>Discord</li>
+              </ul>
+          </div>
+
+         
+            <form method="post" className={styles.footerNewsletter}>
+                <label htmlFor="email" >Subscribe to our newsletter&nbsp;:</label>
+                <div className={styles.inputMail}>
+                <input type="email" id="email" name="email" required placeholder="E-mail&nbsp;: " size="30"></input>
+                <button type="submit" className={styles.submitButton}><span>SEND</span></button>
+                </div>
+            </form>
         </div>
 
-        <form  className=" basis-1/3">
-          <div className="relative z-0 mb-2 w-full group">
-            <h2 className="  ">Subscribe to our newsletter:</h2>
-          </div>
-          <div className="grid xl:grid-cols-2 xl:gap-2 items-center ">
-            <div className="relative z-0 mb-6 w-full group">
-              <input type="email" name="newsletter" id="newsletter" size={100} className="block py-2.5 px-0 w-full  bg-transparent border-0 border-b-2  border-orange appearance-none  focus:outline-none focus:ring-0 peer placeholder:text-orange uppercase " placeholder="e-mail:" required />
-              <label htmlFor="newsletter" className="absolute duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus: peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"></label>
-            </div>
-            <div className="relative z-0 mb-6 w-full group">
-            <button type="submit" className=" bg-black hover:bg-orange hover:text-black rounded-full hover:transition-all">Send</button>
-            </div>
-          </div>
-        </form>
-      </div>
+        <hr className={styles.footerHrOrange}></hr>
 
-      <hr className="my-6 border-orange sm:mx-auto lg:my-8" />
-      <div className="sm:flex sm:items-end sm:justify-between   ">
-        <ul>
-          <li className=" hover:opacity-75">Instagram</li>
-          <li className=" hover:opacity-75">Facebook</li>
-          <li  className=" hover:opacity-75">Conditions générales</li>
-          <li  className=" hover:opacity-75">Cookies</li>
-        </ul>
-        <div className="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-          <span className="  sm:text-center">© JAAJ SKATEBOARD 2022</span>
+        <div className={styles.footerContainerBottom}>
+          <div className={styles.footerUtils}>
+            <ul className={styles.footerUtilsLinks}>
+                  <li>Contact</li>
+                  <li>Cookies</li>
+                  <li>Legal Notice</li>
+                  <li>Terms & conditions</li>
+            </ul>
+          </div>
+
+          <div className={styles.footerUtilsRight}>
+            <span>&copy; jaaj skateboards 2022</span>
+            <div className={styles.footerPayement}>
+              <Image src="/img/payement/mastercard.svg" width={100} height={15} alt="Payement"/>
+              <Image src="/img/payement/Bancontact.svg" width={100} height={15} alt="Payement"/>
+              <Image src="/img/payement/Paypal.svg" width={60} height={15} alt="Payement"/>
+              <Image src="/img/payement/Visa.svg" width={50} height={15} alt="Payement"/>
+            </div>
+          </div>
         </div>
+
       </div>
     </footer>
 

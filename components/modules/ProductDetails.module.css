@@ -1,0 +1,392 @@
+
+/*PERMALINK*/
+.sectionDetails {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    justify-content: center;
+}
+
+.productContainer {
+width: 50%;
+height: 100%;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+}
+
+.productBackground {
+    background: radial-gradient(50% 50% at 50% 50%, #5C3BE2 25%, #f1f1f100 100%);
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    height: auto;
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: auto;
+}
+
+
+.imageDetails {
+    object-fit: cover;
+    aspect-ratio: auto;
+}
+
+/*DESCRIPTION*/
+
+.details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+    width: 100%;
+    max-width: 430px;
+    height: 364px;
+}
+
+.titleProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 10px;
+}
+
+.productName {
+    font-family: 'Gill Sans Nova';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 40px;
+    text-transform: uppercase;
+}
+
+.infosProduct {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    gap: 40px;
+    width: 100%;
+}
+
+.infosProduct span {
+    font-family: 'Acumin Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    opacity: 0.75;
+}
+
+.priceProduct {
+    opacity: 1!important;
+    font-weight: 500!important;
+}
+
+.textDetails {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+}
+
+.textDetails p {
+    font-family: 'Acumin Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.addToCart {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+/*ASSETS IMAGES*/
+.displayAssetImage {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+.assetsContainer {
+    display: flex;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    flex-direction: row;
+    min-height: 100vh;
+}
+
+.assetsImageLarge {
+    width: 70%;
+    height: 100%;
+
+}
+
+.assetsImageLarge span, .assetsImageMediumDisplay span {
+    object-fit: cover !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.fitAssetImage {
+    object-fit: cover !important;
+    max-width: 100% !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.assetsImagesMedium {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 0;
+    width: 30%;
+}
+
+.assetsImageMediumDisplay {
+    width: 100%;
+    height: 50%;
+}
+
+/*SECTION FICHE TECHNIQUE*/
+
+.sectionInfoProduct {
+    display: grid;
+    justify-items: stretch;
+}
+
+.resizeLogo {
+    width: 200px;
+    height: auto;
+    max-width: 100%;
+    aspect-ratio: auto;
+    animation: logo 15s linear infinite;
+}
+
+
+.technicals {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 40px 15px; 
+    gap: 50px;
+
+}
+
+.technicalsContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 30px;
+}
+
+.technicalsContainer h1 {
+    font-family: 'Gill Sans Nova';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 47px;
+    text-transform: uppercase;
+}
+
+.listInfosContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 100px;
+    flex-wrap: nowrap;
+}
+
+.listInfos1, .listInfos2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 25px;
+}
+
+.listInfosText {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0px;
+    gap: 15px;
+    height: auto;
+    width: 100%;
+}
+
+.listInfosText p {
+    font-family: 'Acumin Pro';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 32px;
+}
+
+@keyframes logo {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .displayAssetImage {
+        display: grid;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .assetsContainer {
+        align-items: center;
+    flex-direction: column;
+    }
+
+    .assetsImageLarge {
+        width: 100%;
+        height: 100%;
+    }
+
+    .assetsImagesMedium {
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    }
+
+    .assetsImageMediumDisplay {
+        width: 100%;
+        height: 100%;
+        max-width: 100%;
+
+    }
+
+    .technicals {
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .technicalsContainer h1 {
+        font-size: 28px !important;
+        line-height: 36px !important;
+    }
+
+    .listInfosContainer {
+        flex-wrap: wrap;
+    }
+
+    .listInfosText p {
+        font-size: 18px !important;
+        line-height: 24px !important;
+    }
+}
+
+
+@media (min-width:425px) and (max-width:1024px) {
+
+    .technicalsContainer h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .listInfosContainer {
+        gap: 50px;
+        flex-wrap: nowrap;
+    }
+
+    .listInfosText p {
+        font-size: 20px;
+    line-height: 28px;
+    }
+
+    .resizeLogo {
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .sectionDetails {
+        flex-direction: column;
+        align-items: center;
+        padding: 40px 0;
+    }
+
+    .productContainer {
+        width: 100%;
+        min-height: 50vh;
+    }
+
+    .listInfosText span, .listInfosText img {
+        width: 32px!important;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 425px){
+    .sectionDetails {
+        padding: 40px 20px !important;
+    }
+
+}
+
+@media (max-width:375px){
+    .productName {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .infosProduct span {
+        font-size: 14px;
+        line-height: 18px;
+
+    }
+
+    .textDetails p {
+        font-size: 18px;
+    line-height: 28px;
+    }
+}
+
+

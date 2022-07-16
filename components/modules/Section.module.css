@@ -1,0 +1,276 @@
+.sectionBgBlack {
+    background-color: #1F1F1F;
+    width: 100%;
+    position: relative;
+    top: 0;
+    padding: 0.5rem 1rem;
+    height: 10vh;
+}
+
+.sectionBgWhite {
+    background-color: #F1F1F1;
+    width: 100%;
+    position: relative;
+    top: 0;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    height: 10vh;
+}
+
+.sectionTeam {
+    background-color: #F1F1F1;
+}
+
+
+/*CTA INFOS*/
+.sectionCtaInfos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+}
+
+.sectionCtaLearnMore, .sectionCtaShop {
+    display: flex;
+    width: 50%;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 40px;
+    cursor: pointer;
+}
+
+.sectionCtaLearnMore {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/img/cta-home2.jpg') center center / cover no-repeat;
+}
+
+.sectionCtaShop {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('/img/cta-home.jpg') center center / cover no-repeat;
+}
+
+
+.sectionCtaContainer {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    color: #F1F1F1;
+}
+
+.titleCtaInfos, .textCtaInfos {
+    pointer-events: none;
+    cursor: default;
+}
+
+.titleCtaInfos {
+    font-family: 'Gill Sans Nova', Impact, sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 36px;
+    line-height: 47px;
+    display: flex;
+    align-items: center;
+    pointer-events: none;
+}
+
+.textCtaInfos {
+    font-family: 'acumin-pro-wide';
+    text-transform: uppercase;
+    word-spacing: 5px;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+}
+
+/*CTA SHOP*/
+
+.bgPurple {
+    background: linear-gradient(107.6deg, #5C3BE2 -91.01%, rgba(255, 255, 255, 0) 141.21%);
+}
+
+.containerLinkShop {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    max-width: 420px;
+    height: 120px;
+    width: 100%;
+
+}
+
+.imageShopProducts {
+    width: 100%;
+    height: 100vh;
+    background: url('/img/products-section.jpg') center center / cover no-repeat;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+}
+
+.textShopLink {
+    font-family: 'acumin-pro-wide';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;    
+    color: #1F1F1F;
+}
+
+/*TEAM SECTION*/
+
+.sectionTeamTexte {
+    text-align: center;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: 'acumin-pro-wide';
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+
+.sectionTeam {
+    display: grid;
+    align-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.sectionTeamContainer {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0px;
+}
+
+.containerTeamMembers {
+    padding: 0px;
+    display: inline-grid;
+    justify-items: center;
+    align-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    gap: 30px;
+}
+
+
+.sectionMembersPicture {
+    width: 200px;
+    height: 300px;
+    pointer-events: none;
+    border: 50px;
+    border-radius: 100px 100px;
+    display: grid;
+    align-items: flex-end;
+    justify-items: center;
+    max-width: 100%;
+
+}
+
+.sectionMembersPicture:nth-child(1) {
+    background: url('/img/Member1.jpg') center center / cover no-repeat;
+}
+
+.sectionMembersPicture:nth-child(2) {
+    background: url('/img/Member2.jpg') center center / cover no-repeat;
+}
+
+.sectionMembersPicture:nth-child(3) {
+    background: url('/img/Member3.jpg') center center / cover no-repeat;
+}
+
+.sectionMembersPicture:nth-child(4) {
+    background: url('/img/Member4.jpg') center center / cover no-repeat;
+}
+
+.sectionMembersName {
+    position: relative;
+    max-width: 100%;
+    height: 200px;
+    bottom: 100%;
+}
+
+.sectionMembersNameText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+
+
+/*MEDIA QUERIES*/
+@media (max-width: 1024px) {
+    .containerTeamMembers {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .sectionTeamTexte {
+        font-size: 24px;
+
+    }
+    .sectionMembersPicture {
+        width: 150px;
+        height: 250px;
+    }
+
+}
+
+
+
+@media (max-width: 768px) {
+    .sectionCtaInfos {
+        flex-direction: column;
+    }
+
+    .sectionCtaLearnMore, .sectionCtaShop {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .titleCtaInfos {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .textCtaInfos, .textShopLink {
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .containerTeamMembers {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+}
+
+@media (max-width: 425px) {
+    .containerTeamMembers {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .sectionTeamTexte {
+        font-size: 20px;
+        word-break: keep-all;
+    }
+
+    .imageShopProducts {
+        background: url('/img/products-section-small.jpg') center center / cover no-repeat;
+    }
+}

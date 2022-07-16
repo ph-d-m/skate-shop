@@ -1,9 +1,16 @@
+import styles from "./modules/GridItems.module.css"
+
 export default function Product({ price}) {
     return (
-      <p className=" text-lg text-black">
-        View
-      </p>
+      <>
+        <div className={styles.itemViewPrice}>
+          <p className={styles.itemPrice}>
+            {price.formatted_with_symbol}
+          </p>
+          <p className={styles.itemView}>
+            View
+          </p>
+        </div>
+      </>
     );
-  }
-
-  
+}
