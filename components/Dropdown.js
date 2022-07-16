@@ -34,7 +34,7 @@ export default function Dropdown() {
     return (
         <div className='container lg:hidden block relative'>
                 <a onClick={onClick} className='p-0 border-0 border-none'>
-                    <Image src="/img/ToggleMenu.svg" width={32} height={32}/>
+                    <Image src="/img/ToggleMenu.svg" width={32} height={32} alt="Menu"/>
                 </a>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                     <ul className="menu-trigger">

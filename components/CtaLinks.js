@@ -8,7 +8,7 @@ export default function CtaLinks() {
             <h1 className={styles.titleCtaInfos}>
               &#35;Just go and sk&#64;te&nbsp;!</h1>  
             <p className={styles.textCtaInfos}> 
-            We're an european skate brand located in Belgium 
+            Were an european skate brand located in Belgium 
              and we want to share our passion to you</p>
             <Link href="/infos" passHref>
                <button><span>LEARN MORE</span></button>
