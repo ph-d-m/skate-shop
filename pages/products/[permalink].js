@@ -14,7 +14,6 @@ export async function getStaticProps({ params }) {
   return {
     props: {
       product,
-
     },
   };
 }
@@ -30,13 +29,13 @@ export async function getStaticPaths() {
         permalink: product.permalink,
       },
     })),
-    fallback: true,
+    fallback: false,
   };
 
 
 }
 
-export default function ProductPage({ product, name }) {
+export default function ProductPage({ product}) {
 
   const imageLoader = ({ src, width, quality }) => {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 90}`
@@ -62,7 +61,7 @@ export default function ProductPage({ product, name }) {
         <div className={styles.productContainer}>
           <div className={styles.details}>
             <div className={styles.titleProduct}>
-              <h1 className={styles.productName}>{product.name}</h1>
+              <h1 className={styles.productName}></h1>
               <div className={styles.infosProduct}>
                 <span>{product.inventory.available}</span>
                 <span>Product ID: {product.created}</span>
