@@ -23,6 +23,7 @@ export async function getServerSideProps(context) {
 
 
 export default function Lookbook({data}) {
+
     const [photos, setPhotos] = useState(data);
     const [thumbsSwiper, setThumbsSwiper] = useState(null);
 
@@ -114,7 +115,7 @@ export default function Lookbook({data}) {
                                 width={200}
                                 alt={pic.url}
                                 className="object-cover aspect-auto"
-                                />
+                              />
                             </SwiperSlide>
                         ))
                     }

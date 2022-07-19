@@ -5,9 +5,10 @@ import CtaLinks from "../components/CtaLinks";
 import Layout from "../components/Layout";
 
 export default function Home() {
+
   return (
     <Layout title="Home">
-        <HeaderVideo />
+        <HeaderVideo/>
           <CtaLinks/>
             <section className="bg-gradient-to-br from-indigo-600 to-transparent">
               <div className={styles.imageShopProducts}>

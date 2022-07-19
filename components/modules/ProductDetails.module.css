@@ -183,9 +183,47 @@ gap: 10px;
     max-width: 100%;
     aspect-ratio: auto;
     animation: logo 15s linear infinite;
+    -webkit-animation: logo 15s linear infinite;
+    -moz-animation: logo 15s linear infinite;
 }
 
 @keyframes logo {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@-webkit-keyframes logo {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@-moz-keyframes logo {
     0% {
         transform: rotate3d(1, 1, 1, 0deg);
     }

@@ -44,13 +44,16 @@ export default function Navbar() {
                     </a>
                 </Link>
             </div>
-            <div className='container flex justify-end'>
+            <div className='container flex justify-end relative'>
                 <Image
                     src="/img/icons/Basket.svg"
                     width={24}
                     height={24}
                     alt="Cart"
                 />
+                <div className={styles.basketNumber}>
+                    <span className={styles.number}>0</span>
+                </div>
             </div>
         </nav>
     )

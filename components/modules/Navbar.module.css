@@ -43,3 +43,35 @@
     transform: scaleX(1);
     transform-origin: bottom left;
   }
+
+  .basketNumber {
+    height: 18px;
+    width: 18px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 99999px;
+    background-color: #f87c3d;
+    top: -15%;
+    position: absolute;
+    right: -1.33%;
+    max-width: 100%;
+  }
+
+  .number {
+    font-size: 12px;
+    font-weight: 600;
+    color: #1f1f1f;
+    font-family: 'gill-sans-nova';
+
+  }
+
+  @media (max-width: 425px) {
+
+    .basketNumber {
+      right: -5% !important;
+      top: -15%;
+      position: absolute;
+    }
+  }

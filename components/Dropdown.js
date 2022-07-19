@@ -38,6 +38,7 @@ export default function Dropdown() {
                 </a>
                 <nav ref={dropdownRef} className={`menu ${isActive ? 'active' : 'inactive'}`}>
                     <ul className="menu-trigger">
+                    <li><Link href="/"><a>Home</a></Link></li>
                     <li><Link href="/shop"><a>Shop All</a></Link></li>
                     <li><Link href="/lookbook"><a>Lookbook</a></Link></li>
                     <li><Link href="/infos"><a>Infos</a></Link></li>

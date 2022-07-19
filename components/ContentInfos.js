@@ -8,11 +8,12 @@ export default function Content() {
         <section className={styles.sectionInfos}>
             <div>
             <Image
-            src='/img/logo.svg'
+            src='/img/gif/logo.gif'
             width={800}
-            height={200}
+            height={300}
             alt="Logo"
-            className='object-fill aspect-auto'
+            className='object-fill aspect-auto '
+            priority
             />
             </div>
             <Marquee />
