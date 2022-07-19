@@ -3,7 +3,7 @@ import getCommerce from "../utils/commerce";
 import CategoryList from "../components/CategoryList"
 import Layout from '../components/Layout';
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
     const commerce = getCommerce();
     const { data: products } = await commerce.products.list();
     const { data: categories } = await commerce.categories.list();
@@ -32,7 +32,7 @@ export async function getStaticProps() {
             </div>
           </div>
         </section>
-      </Layout>
+        </Layout>
     );
   }
 

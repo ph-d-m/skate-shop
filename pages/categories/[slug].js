@@ -25,19 +25,18 @@ export async function getServerSideProps({ params }) {
   };
 }
 
-// export async function getStaticPaths() {
-//     const commerce = getCommerce();
-//     const { data: categories } = await commerce.categories.list();
-  
-//     return {
-//       paths: categories.map((category) => ({
-//         params: {
-//           slug: category.slug,
-//         },
-//       })),
-//       fallback: false,
-//     };
-//   }
+//  export async function getStaticPaths() {
+//      const commerce = getCommerce();
+//      const { data: categories } = await commerce.categories.list();
+//      return {
+//        paths: categories.map((category) => ({
+//          params: {
+//            slug: category.slug,
+//          },
+//        })),
+//        fallback: false,
+//      };
+//    }
 
   export default function CategoryPage({ products, categories, category }) {
 

@@ -2,6 +2,7 @@
 import styles from './modules/Video.module.css'
 import Marquee from './Marquee'
 
+
 export default function HeaderVideo() {
 
     return (
