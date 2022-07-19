@@ -8,7 +8,6 @@ export default function Document() {
         <link rel="preconnect" href="https://use.typekit.net/xxy5clq.css" as="font"/>      
         <link rel="stylesheet" href="https://use.typekit.net/xxy5clq.css"/>      
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
       </Head>
       <body>
         <Main />
