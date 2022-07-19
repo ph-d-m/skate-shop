@@ -21,8 +21,8 @@ export default function Content() {
         <section className={styles.sectionAbout}>
             <div className={styles.aboutUs}>
                 <h1 className={styles.aboutUsTitle}>About us</h1>
-                <p className={styles.aboutUsText}>We are a belgian newcomer’s skate brand and we only have one rule: have fun.
-                    We are here to make a brand who can make everyone good about themself.</p>
+                <p className={styles.aboutUsText}>We are a belgian newcomer’s skate brand and we only have one rule: have fun.</p>
+                <p className={styles.aboutUsText}>We are here to make a brand who can make everyone good about themself.</p>
             </div>
         </section>
 

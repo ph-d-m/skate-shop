@@ -8,6 +8,7 @@
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(79 70 229 / 0));
     --tw-gradient-to: transparent;
 
+    padding: 0 15px;
 }
 
 .sectionExplanation {
@@ -23,9 +24,8 @@
 
 .aboutUs {
     width: 100%;
-    max-width: 700px;
+    max-width: 1000px;
     height: auto;
-    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -35,7 +35,7 @@
 }
 
 .aboutUsTitle {
-    font-family: "gill-sans-nova",sans-serif;
+    font-family: 'gill-sans-nova',sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 64px;
@@ -44,7 +44,7 @@
 }
 
 .aboutUsText {
-    font-family: 'Acumin Pro Wide';
+    font-family: 'acumin-pro-wide';
     font-style: normal;
     font-weight: 500;
     font-size: 36px;
@@ -58,7 +58,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    padding: 15px 40px;
     min-height: 100vh;
     height: 100%;
     width: 100%;
@@ -70,10 +69,11 @@
     flex-direction: column;
     align-items: flex-start;
     row-gap: 15px;
+    padding: 20px 15px;
 }
 
 .title {
-    font-family: 'gill-sans-nova';
+    font-family: 'gill-sans-nova', sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 48px;
@@ -88,7 +88,7 @@
 }
 
 .paragraph {
-    font-family: 'Acumin Pro';
+    font-family: 'acumin-pro';
     font-style: normal;
     font-weight: 400;
     font-size: 28px;
@@ -115,4 +115,40 @@
     .sectionExplanation {
         grid-template-columns: repeat(1, 1fr);
     }
+}
+
+@media (max-width:768px) {
+    .aboutUsTitle {
+        font-size: 56px;
+        line-height: 64px;
+    }
+
+    .aboutUsText {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .title {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .paragraph {
+        font-size: 24px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width:425px) {
+    .aboutUsTitle, .title {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .aboutUsText, .paragraph {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+
 }

@@ -3,7 +3,7 @@ import Image from "next/image";
 import Product from "./Product";
 import styles from "./modules/GridItems.module.css"
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const commerce = getCommerce();
   const { data: products } = await commerce.products.list();
   return {
@@ -27,7 +27,7 @@ export default function ProductList({ products }) {
           {products.map((product) => (
             <div key={product.permalink} className={styles.itemBackground}>
               <Link href={`/products/${encodeURIComponent(product.permalink)}`} passHref>
-                <div className={styles.itemImage}>
+                <div className={styles.itemImage} key={product.permalink}>
                      <Image
                        loader={imageLoader}
                        src={product.image.url}

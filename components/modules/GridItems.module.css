@@ -64,8 +64,8 @@
 }
 
 .itemScaleHover:hover {
-    --tw-scale-x: 1.25;
-    --tw-scale-y: 1.25;
+    --tw-scale-x: 1.15;
+    --tw-scale-y: 1.15;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -80,7 +80,7 @@
 .itemPrice, .itemView {
     font-family: "gill-sans-nova",sans-serif;;
     font-style: normal;
-    font-weight: 800;
+    font-weight: 500;
     font-size: 16px;
     line-height: 20px;
     text-align: center;

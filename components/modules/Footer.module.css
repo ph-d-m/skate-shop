@@ -92,6 +92,7 @@
 .inputMail input {
     background-color: transparent;
     border-bottom: 1px solid #F87C3D;
+    border-radius: 0px;
     outline: none;
     color: #F87C3D;
     text-transform: uppercase;
@@ -110,6 +111,9 @@
     max-width: 100%;
     width: 120px;
     margin-top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .footerSocials {
@@ -130,7 +134,9 @@
     line-height: 24px;
     text-transform: uppercase;
     color: #F87C3D;
+    cursor: pointer;
 }
+
 
 .footerUtils {
     display: flex;
@@ -323,7 +329,7 @@
 
     .submitButton {
         width: 90px !important;
-        border: 0.5px solid #F87C3D;
+        border: 2.5px solid #F87C3D;
         height: 30px;
     }
 

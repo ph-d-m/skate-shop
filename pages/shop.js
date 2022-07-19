@@ -1,6 +1,7 @@
 import ProductList from '../components/ProductList';
 import getCommerce from "../utils/commerce";
 import CategoryList from "../components/CategoryList"
+import Layout from '../components/Layout';
 
 export async function getStaticProps() {
     const commerce = getCommerce();
@@ -16,11 +17,10 @@ export async function getStaticProps() {
   
   export default function Shop({ products, categories }) {
     return (
-      <>
+      <Layout title='Shop'>
          <div className="containerShop">
            <div className="containerCategoryItems">
            <CategoryList categories={categories}/>
-                <p className="numberOfItemsText">{products.length} items</p>
             </div> 
          </div>
         <ProductList products={products} />
@@ -32,7 +32,7 @@ export async function getStaticProps() {
             </div>
           </div>
         </section>
-      </>
+      </Layout>
     );
   }
 

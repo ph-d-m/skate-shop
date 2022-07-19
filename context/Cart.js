@@ -7,6 +7,8 @@ const CartDispatchContext = createContext();
 const SET_CART = "SET_CART";
 
 const initialState = {
+    cart: { loading: true},
+    order: null,
     total_items: 0,
     total_unique_items: 0,
     line_items: []
@@ -47,7 +49,9 @@ export const CartProvider = ({children}) => {
 
     return (
         <CartDispatchContext.Provider value={{setCart}}>
-            <CartStateContent.Provider value={state}>{children}</CartStateContent.Provider>
+            <CartStateContent.Provider value={state}>
+                {children}
+                </CartStateContent.Provider>
         </CartDispatchContext.Provider>
     )
 }

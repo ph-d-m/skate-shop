@@ -22,11 +22,24 @@
     font-size: 1rem;
     line-height: 1.75rem;
     text-transform: uppercase;
-
+    display: inline-block;
+    position: relative;
 }
 
-@media (min-width: 1920px) {
-    .navBar {
-        width: 50%!important;
-    }
-}
+.navBarLinks li:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #F87C3D;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .navBarLinks li:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }

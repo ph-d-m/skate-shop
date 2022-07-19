@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import getCommerce from "../../utils/commerce";
 import Image from "next/image";
 import styles from "../../components/modules/ProductDetails.module.css"
 import InfoProduct from "../../components/InfoProduct";
+import { useCartDispatch } from "../../context/Cart";
+import Layout from "../../components/Layout";
 
-export async function getStaticProps({ params }) {
+export async function getServerSideProps({ params }) {
   const { permalink } = params;
   const commerce = getCommerce()
   const product = await commerce.products.retrieve(permalink, {
@@ -18,31 +20,41 @@ export async function getStaticProps({ params }) {
   };
 }
 
-export async function getStaticPaths() {
-  const commerce = getCommerce()
-  const { data: products } = await commerce.products.list();
+// export async function getStaticPaths() {
+//   const commerce = getCommerce()
+//   const { data: products } = await commerce.products.list();
 
 
-  return {
-    paths: products.map((product) => ({
-      params: {
-        permalink: product.permalink,
-      },
-    })),
-    fallback: false,
-  };
+//   return {
+//     paths: products.map((product) => ({
+//       params: {
+//         permalink: product.permalink,
+//       },
+//     })),
+//     fallback: false,
+//   };
 
 
-}
+// }
 
-export default function ProductPage({ product}) {
+export default function ProductPage({product}) {
+
+  //  const  setCart = useCartDispatch({})
+  //  const addToCart = () => commerce.cart.add(product.id).then(({cart}) => setCart(cart))
+   
+   const addToCart = async () => {
+     console.log('add');
+   }
+
+   console.log([product])
+
 
   const imageLoader = ({ src, width, quality }) => {
     return `https://cdn.chec.io/${src}?w=${width}&q=${quality || 90}`
   }
 
   return (
-    <>
+    <Layout title={product.name}>
       <section className={styles.sectionDetails}>
 
         <div className={styles.productContainer}>
@@ -61,17 +73,20 @@ export default function ProductPage({ product}) {
         <div className={styles.productContainer}>
           <div className={styles.details}>
             <div className={styles.titleProduct}>
-              <h1 className={styles.productName}></h1>
+              <h1 className={styles.productName}>{product.name}</h1>
               <div className={styles.infosProduct}>
-                <span>{product.inventory.available}</span>
+                {product.inventory.available > 0 ? (
+                 <span> In stock </span>
+                ) : (
+                 <span>Unvailable</span>
+                )}
                 <span>Product ID: {product.created}</span>
                 <span className={styles.priceProduct}>{product.price.formatted_with_symbol}</span>
               </div>
             </div>
             <div className={styles.textDetails} dangerouslySetInnerHTML={{ __html: product.description }}></div>
-
             <div className={styles.addToCart}>
-              <button><span>Add to cart</span></button>
+              <button name="Add to cart" onClick={addToCart}><span>Add to cart</span></button>
             </div>
           </div>
         </div>
@@ -117,6 +132,6 @@ export default function ProductPage({ product}) {
         </div>
       </section>
       <InfoProduct />
-    </>
+    </Layout>
   );
 }

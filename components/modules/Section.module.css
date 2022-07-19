@@ -66,7 +66,7 @@
 }
 
 .titleCtaInfos {
-    font-family: 'Gill Sans Nova', Impact, sans-serif;
+    font-family: 'gill-sans-nova', Impact, sans-serif;
     font-weight: 900;
     font-style: normal;
     text-transform: uppercase;
@@ -142,17 +142,19 @@
     align-content: center;
     align-items: center;
     justify-items: center;
+    padding: 40px 0px;
+
 }
 
 .sectionTeamContainer {
     width: 100%;
+    height: 100%;
     max-width: 1200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 40px 0px;
 }
 
 .containerTeamMembers {
@@ -262,7 +264,7 @@
 
 @media (max-width: 425px) {
     .containerTeamMembers {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .sectionTeamTexte {
@@ -272,5 +274,10 @@
 
     .imageShopProducts {
         background: url('/img/products-section-small.jpg') center center / cover no-repeat;
+    }
+
+    .sectionMembersPicture {
+        width: 100px !important;
+        height: 150px !important;
     }
 }

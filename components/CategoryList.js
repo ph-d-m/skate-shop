@@ -4,7 +4,6 @@ import Category from "./Category";
 export default function CategoryList({ categories }) {
   if (!categories) return null;
 
-
   return (
     <ul className="categoryAll">
       {categories.map((category) => (
@@ -16,6 +15,7 @@ export default function CategoryList({ categories }) {
           </Link>
         </li>
       ))}
+
     </ul>
   );
 }

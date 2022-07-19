@@ -62,7 +62,7 @@ gap: 10px;
 }
 
 .productName {
-    font-family: 'Gill Sans Nova';
+    font-family: 'gill-sans-nova', Impact, sans-serif;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -81,7 +81,7 @@ gap: 10px;
 }
 
 .infosProduct span {
-    font-family: 'Acumin Pro';
+    font-family: 'acumin-pro';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -101,7 +101,7 @@ gap: 10px;
 }
 
 .textDetails p {
-    font-family: 'Acumin Pro';
+    font-family: 'acumin-pro';
     font-style: normal;
     font-weight: 300;
     font-size: 20px;
@@ -185,6 +185,25 @@ gap: 10px;
     animation: logo 15s linear infinite;
 }
 
+@keyframes logo {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    25% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+
+    75% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+
 
 .technicals {
     display: flex;
@@ -206,7 +225,7 @@ gap: 10px;
 }
 
 .technicalsContainer h1 {
-    font-family: 'Gill Sans Nova';
+    font-family: 'gill-sans-nova', Impact, sans-serif;
     font-style: normal;
     font-weight: 900;
     font-size: 36px;
@@ -244,30 +263,13 @@ gap: 10px;
 }
 
 .listInfosText p {
-    font-family: 'Acumin Pro';
+    font-family: 'acumin-pro';
     font-style: normal;
     font-weight: 300;
     font-size: 24px;
     line-height: 32px;
 }
 
-@keyframes logo {
-    0% {
-        transform: rotate3d(1, 1, 1, 0deg);
-    }
-
-    25% {
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
-
-    75% {
-        transform: rotate3d(1, 1, 1, 0deg);
-    }
-
-    100% {
-        transform: rotate3d(1, 1, 1, 360deg);
-    }
-}
 
 @media (max-width: 1024px) {
 

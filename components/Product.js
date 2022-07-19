@@ -1,6 +1,6 @@
 import styles from "./modules/GridItems.module.css"
 
-export default function Product({ price}) {
+export default function Product({price}) {
     return (
       <>
         <div className={styles.itemViewPrice}>

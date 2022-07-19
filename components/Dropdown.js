@@ -15,7 +15,7 @@ export default function Dropdown() {
     // useEffect to perform logic when the state isActive changes
     useEffect(() => {
        const pageClickEvent = (e) => {
-           console.log(e);
+        //    console.log(e);
            if (dropdownRef.current !== null && !dropdownRef.current.contains(e.target)) {
                
            }
