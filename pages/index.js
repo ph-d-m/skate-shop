@@ -5,7 +5,6 @@ import CtaLinks from "../components/CtaLinks";
 import Layout from "../components/Layout";
 
 export default function Home() {
-
   return (
     <Layout title="Home">
         <HeaderVideo/>
