@@ -16,7 +16,7 @@ export default function Home() {
                   <p className={styles.textShopLink}>
                     The latest products just for you. Right here.</p>
                     <Link href="/shop" passHref>
-                     <button><span>SHOP</span></button>
+                     <button type="button"><span>SHOP</span></button>
                    </Link>
                 </div>
               </div>

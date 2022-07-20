@@ -1,8 +1,8 @@
 import Link from 'next/link'
-import Image from 'next/image'
 import Dropdown from './Dropdown'
 import styles from './modules/Navbar.module.css'
 import Logo from './Logo'
+import Basket from './Basket'
 
 
 export default function Navbar() {
@@ -45,12 +45,7 @@ export default function Navbar() {
                 </Link>
             </div>
             <div className='container flex justify-end relative'>
-                <Image
-                    src="/img/icons/Basket.svg"
-                    width={24}
-                    height={24}
-                    alt="Cart"
-                />
+                <Basket/>
                 <div className={styles.basketNumber}>
                     <span className={styles.number}>0</span>
                 </div>

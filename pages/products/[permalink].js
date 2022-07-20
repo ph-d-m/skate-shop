@@ -73,7 +73,7 @@ export default function ProductPage({product}) {
             </div>
             <div className={styles.textDetails} dangerouslySetInnerHTML={{ __html: product.description }}></div>
             <div className={styles.addToCart}>
-              <button name="Add to cart"><span>Add to cart</span></button>
+              <button name="Add to cart" type="button"><span>Add to cart</span></button>
             </div>
           </div>
         </div>

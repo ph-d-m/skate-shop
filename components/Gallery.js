@@ -4,7 +4,6 @@ import styles from "./modules/Gallery.module.css"
 
 export default function Gallery() {
     return (
-    <>
         <section className={styles.sectionLook}>
             <div className={styles.Look}>
                 <h1 className={styles.titleLook}>
@@ -12,10 +11,9 @@ export default function Gallery() {
                 <p className={styles.textLook}> 
                 Sometimes we like to take sick pictures and sometimes some videos</p>
                 <Link href="#" passHref>
-                   <button><span>Youtube</span></button>
+                   <button type="button"><span>Youtube</span></button>
                  </Link>
             </div>
         </section>
-    </>
     )
 }

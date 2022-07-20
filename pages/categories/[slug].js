@@ -50,9 +50,6 @@ export async function getServerSideProps({ params }) {
         <ProductList products={products} />
         <section>
           <div className="pageShopImage">
-            <div >
-              <p>The latest products just for you. Right here.</p>
-            </div>
           </div>
         </section>
     </Layout>

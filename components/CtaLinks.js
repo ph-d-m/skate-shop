@@ -11,7 +11,7 @@ export default function CtaLinks() {
             Were an european skate brand located in Belgium 
              and we want to share our passion to you</p>
             <Link href="/infos" passHref>
-               <button><span>LEARN MORE</span></button>
+               <button type="button"><span>LEARN MORE</span></button>
              </Link>
              </div>
         </div>
@@ -26,7 +26,7 @@ export default function CtaLinks() {
             created by ourself and with love&nbsp;&#9825;
             </p>
             <Link href="/shop" passHref>
-               <button><span>VIEW</span></button>
+               <button type="button"><span>VIEW</span></button>
              </Link>
              </div>
         </div> 

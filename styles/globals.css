@@ -76,7 +76,7 @@ button {
   max-width: 160px;
   border: 3.6667px #F87C3D solid;
   border-radius: 99999px;
-  background-color: #1F1F1F;
+  background-color: #1F1F1F !important;
   color: #F87C3D;
   height: 40px;
   margin-top: 10px;
@@ -91,7 +91,7 @@ button span {
 }
 
 button:hover {
-  background-color: #F87C3D;
+  background-color: #F87C3D !important;
   color: #1F1F1F;
   border: #1F1F1F 3.6667px solid;
 }
@@ -188,6 +188,7 @@ button:hover {
   display: grid;
   align-items: center;
   justify-items: center;
+  filter: brightness(0.5);
 }
 
 .return, .delivery {

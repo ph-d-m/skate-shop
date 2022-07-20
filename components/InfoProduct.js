@@ -4,7 +4,7 @@ import styles from "./modules/ProductDetails.module.css"
 
 export default function InfoProduct() {
     return (
-        <>
+        
         <section className={styles.sectionInfoProduct}>
   <div className={styles.technicals}>
     <div className={styles.technicalsContainer}>
@@ -54,6 +54,5 @@ export default function InfoProduct() {
     </div>
   </div>
 </section> 
-        </>
     )
 }

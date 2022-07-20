@@ -6,7 +6,7 @@ export default function CustomError() {
         <section className={styles.error}>
             <div className={styles.return}>
                 <h1 className={styles.errorTitle}>ERROR 404</h1>
-                <Link href="/" passHref><button><span>Home</span></button></Link>
+                <Link href="/" passHref><button type="button"><span>Home</span></button></Link>
             </div>
         </section>
     )
