@@ -16,6 +16,10 @@ export async function getServerSideProps() {
   }
   
   export default function Shop({ products, categories }) {
+
+
+    console.log([categories]);
+
     return (
       <Layout title='Shop'>
          <div className="containerShop">
@@ -27,8 +31,8 @@ export async function getServerSideProps() {
 
         <section>
           <div className="pageShopImage">
-            <div >
-              <p>The latest products just for you. Right here.</p>
+            <div>
+              <p>Everything here</p>
             </div>
           </div>
         </section>

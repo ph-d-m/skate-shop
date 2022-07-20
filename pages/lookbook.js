@@ -44,7 +44,7 @@ export default function Lookbook({data}) {
             className={styles.galleryImages}
             >
                 <SwiperSlide >
-                    <video muted loop autoPlay controls className={styles.video}>
+                    <video muted loop autoPlay controls className={styles.video} preload='metadata' playsInline>
                         <source src="jaajskateboard-small.mp4"></source>
                     </video>
                 </SwiperSlide> 
@@ -73,7 +73,7 @@ export default function Lookbook({data}) {
             className={styles.galleryThumbsDesktop }
             >
                 <SwiperSlide>
-                    <video paused="true">
+                    <video paused="true" preload='metadata' playsInline>
                         <source src="jaajskateboard-small.mp4"></source>
                     </video>
                 </SwiperSlide>
@@ -103,7 +103,7 @@ export default function Lookbook({data}) {
             className={styles.galleryThumbsMobile}
             >
                 <SwiperSlide>
-                    <video paused="true">
+                    <video paused="true" preload='metadata' playsInline>
                         <source src="jaajskateboard-small.mp4"></source>
                     </video>
                 </SwiperSlide>

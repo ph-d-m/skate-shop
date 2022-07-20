@@ -16,6 +16,6 @@ export default function CategoryList({ categories }) {
         </li>
       ))}
 
-    </ul>
+    </ul>    
   );
 }

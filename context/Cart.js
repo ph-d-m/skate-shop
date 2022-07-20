@@ -36,14 +36,12 @@ export const CartProvider = ({children}) => {
     const getCart = async () => {
 
         try {
-            const cart = await getCommerce.cart.retrieve();
+            const cart = await commerce.cart.retrieve(cart);
             setCart(cart)
-    
-    
+
         } catch (err) {
             console.log(err);
         }
-        
     }
 
     return (
