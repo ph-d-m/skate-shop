@@ -130,7 +130,7 @@
 .sectionTeamTexte {
     text-align: center;
     font-size: 28px;
-    line-height: 36px;
+    line-height: 40px;
     font-family: 'acumin-pro-wide';
     font-weight: 500;
     text-transform: uppercase;
@@ -154,7 +154,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
 }
 
 .containerTeamMembers {
@@ -166,13 +166,13 @@
     justify-content: center;
     align-items: center;
     max-width: 1200px;
-    gap: 30px;
+    gap: 50px;
 }
 
 
 .sectionMembersPicture {
-    width: 200px;
-    height: 300px;
+    width: 180px;
+    height: 260px;
     pointer-events: none;
     border: 50px;
     border-radius: 100px 100px;
@@ -184,7 +184,7 @@
 }
 
 .sectionMembersPicture:nth-child(1) {
-    background: url('/img/Member1.jpg') center center / cover no-repeat;
+    background: url('/img/Member1.jpg') center -30px / auto no-repeat;
 }
 
 .sectionMembersPicture:nth-child(2) {
