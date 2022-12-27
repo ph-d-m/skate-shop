@@ -93,8 +93,6 @@ export default function ProductPage({product}) {
               priority
             />
           </div>
-
-          <div className={styles.assetsImagesMedium}>
             <div className={styles.assetsImageMediumDisplay}>
               <Image
                 alt={product.name}
@@ -115,7 +113,6 @@ export default function ProductPage({product}) {
                 className={styles.fitAssetImage}
               />
             </div>
-          </div>
         </div>
       </section>
       <InfoProduct />

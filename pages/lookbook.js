@@ -11,7 +11,6 @@ import Layout from '../components/Layout';
 
 
 
-
 export async function getServerSideProps(context) {
     const data = await getQueryPhotos(context);
     return {
