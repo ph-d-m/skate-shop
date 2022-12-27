@@ -81,38 +81,45 @@ export default function ProductPage({product}) {
 
       <section className={styles.displayAssetImage}>
         <div className={styles.assetsContainer}>
-          <div className={styles.assetsImageLarge}>
+
+          {/* Product 1 */}
+          <div>
             <Image
               alt={product.name}
               loader={imageLoader}
               src={product.assets[1].url}
               objectFit="cover"
-              className={styles.fitAssetImage}
-              width={600}
-              height={600}
+              width={500}
+              height={500}
               priority
             />
           </div>
-            <div className={styles.assetsImageMediumDisplay}>
+          {/* Product 1 */}
+
+          {/* Product 2 */}
+            <div>
               <Image
                 alt={product.name}
                 loader={imageLoader}
                 src={product.assets[2].url}
-                width={530}
-                height={550}
-                className={styles.fitAssetImage}
+                width={500}
+                height={500}
+                objectFit="cover"
               />
             </div>
-            <div className={styles.assetsImageMediumDisplay}>
+            {/* Product 2 */}
+
+            {/* Product 3 */}
+            <div>
               <Image
                 alt={product.name}
                 loader={imageLoader}
                 src={product.assets[3].url}
-                width={530}
-                height={550}
-                className={styles.fitAssetImage}
+                width={500}
+                height={500}
               />
             </div>
+            {/* Product 3 */}
         </div>
       </section>
       <InfoProduct />

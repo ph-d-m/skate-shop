@@ -126,49 +126,15 @@ gap: 10px;
 
 
 .assetsContainer {
-    display: flex;
+    display: grid;
     padding: 0px;
     width: 100%;
     height: 100%;
-    align-items: center;
-    flex-direction: row;
-    min-height: 100vh;
+    min-height: 80vh;
+    grid-template-columns: repeat(3, 1fr);
 }
 
-.assetsImageLarge {
-    width: 70%;
-    height: 100%;
 
-}
-
-.assetsImageLarge span, .assetsImageMediumDisplay span {
-    object-fit: cover !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.fitAssetImage {
-    object-fit: cover !important;
-    max-width: 100% !important;
-    width: 100% !important;
-    height: 100% !important;
-}
-
-.assetsImagesMedium {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 0px;
-    gap: 0;
-    width: 30%;
-}
-
-.assetsImageMediumDisplay {
-    width: 100%;
-    height: 50%;
-}
 
 /*SECTION FICHE TECHNIQUE*/
 
@@ -178,7 +144,7 @@ gap: 10px;
 }
 
 .resizeLogo {
-    width: 200px;
+    width: 180px;
     height: auto;
     max-width: 100%;
     aspect-ratio: auto;
@@ -248,9 +214,8 @@ gap: 10px;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding: 40px 15px; 
-    gap: 50px;
-
+    padding: 30px 15px; 
+    background-color: #F87C3D;
 }
 
 .technicalsContainer {
@@ -304,8 +269,8 @@ gap: 10px;
     font-family: 'acumin-pro';
     font-style: normal;
     font-weight: 300;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 
@@ -318,26 +283,7 @@ gap: 10px;
     }
 
     .assetsContainer {
-        align-items: center;
-    flex-direction: column;
-    }
-
-    .assetsImageLarge {
-        width: 100%;
-        height: 100%;
-    }
-
-    .assetsImagesMedium {
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    }
-
-    .assetsImageMediumDisplay {
-        width: 100%;
-        height: 100%;
-        max-width: 100%;
-
+        grid-template-columns: repeat(2, 1fr);
     }
 
     .technicals {
@@ -407,6 +353,10 @@ gap: 10px;
 @media (max-width: 425px){
     .sectionDetails {
         padding: 40px 20px !important;
+    }
+
+    .assetsContainer {
+        grid-template-columns: repeat(1, 1fr);
     }
 
 }
